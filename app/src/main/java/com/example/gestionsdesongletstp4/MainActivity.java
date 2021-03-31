@@ -30,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(sectionsPagerAdapter);
 
-        //On décide de ne pas afficher le tabLayout
-        // Décommenter la partie ci-dessous et celle du tablout dans activity_main.xml pour l'afficher
-        /*TabLayout tabs = findViewById(R.id.tabs);
-        tabs.setupWithViewPager(viewPager);*/
+        //On décide d'afficher le tabLayout
+        // commenter la partie ci-dessous et celle du tablout dans activity_main.xml pour ne pas l'afficher
+        TabLayout tabs = findViewById(R.id.tabs);
+        tabs.setupWithViewPager(viewPager);
 
 
         FloatingActionButton fab = findViewById(R.id.fab);
